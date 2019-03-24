@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  height: 100%;
 }
 
 .App-logo {
@@ -31,3 +32,113 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container{
+  height: 100%;
+}
+
+.todo-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__header{
+  font-family: 'Fjalla One', sans-serif;
+  background: #121212;
+  padding: 10px 30px;
+  letter-spacing: 0.2px;
+  font-size: 24px;
+  color: #FAFAFA;
+}
+
+.todo__section{
+  background: #000000;
+  color: #FAFAFA;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.section-wrapper{
+    height: 90%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.todo__form{
+  height: 50px;
+}
+
+.todo__list{
+  flex-grow: 1;
+  background: #121212;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.todoitem-container{
+  border: 1px solid #2e2e2e;
+  margin-bottom: 10px;
+  display: flex;
+  padding: 8px;
+}
+.todoitem-container:hover{
+  box-shadow: 0 0 5px #888;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.todoitem-left{
+  width: 90%;
+  text-align: left;
+}
+
+.todoitem__createdAt{
+  font-size: 10px;
+    color: #7d7b7b;
+}
+
+.todoitem-right{
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  opacity: 0.8;
+}
+
+.action-icon{
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.todo__form form{
+  display: flex;
+}
+
+form input[type="text"]{
+  padding: 10px 15px;
+    width: 80%;
+    margin-right: 20px;
+}
+
+form input[type="submit"]{
+  flex-grow: 1;
+  cursor: pointer;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+}
+
+.todoitem__text:focus{
+  outline: none;
+}
+
+.todoitem__text.complete {
+  text-decoration: line-through;
+  color: #7a3e3e;
+}
+
+
